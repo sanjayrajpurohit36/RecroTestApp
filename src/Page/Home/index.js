@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Card from "./Components/Card";
 import "./index.scss";
 
