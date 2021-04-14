@@ -1,3 +1,4 @@
+// using BEM css naming convention
 .card-wrapper {
   padding: 0.5rem;
   background: #fff;
@@ -9,4 +10,15 @@
   border: 1px solid black;
   border-radius: 0.5rem;
   width: 14rem;
+  &__id {
+    width: 100%;
+    text-align: left;
+  }
+  &__title {
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+  &__body {
+    text-align: left;
+  }
 }
