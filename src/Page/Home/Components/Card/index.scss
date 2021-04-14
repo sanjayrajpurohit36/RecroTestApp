@@ -13,14 +13,27 @@
   &__id {
     width: 100%;
     text-align: left;
+    text-overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &__title {
     text-align: left;
     width: 100%;
     padding: 0.5rem 0;
+    text-overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &__body {
     width: 100%;
     text-align: left;
+    width: 100%;
+    text-overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
