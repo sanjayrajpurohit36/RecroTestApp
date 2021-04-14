@@ -13,6 +13,16 @@ const Home = (props) => {
     getDefaultData(start, dispatch);
   }, []);
 
+  window.onscroll = function () {
+    if (
+      window.innerHeight + window.scrollY >=
+      document.body.offsetHeight - 50
+    ) {
+      getDefaultData(start + 10, dispatch);
+      setStart(start + 10);
+      console.log("calling api");
+    }
+  };
   return (
     <div className="main-container">
       <div className="users-wrapper">
