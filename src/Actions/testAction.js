@@ -7,7 +7,6 @@ export const getDefaultData = (start, dispatch) => {
       ` http://jsonplaceholder.typicode.com/posts?_start=${start}&_limit=${limit} `
     )
     .then((response) => {
-      debugger;
       console.log("testing api response. ===>", response);
       dispatch({ type: "TEST_ACTION", payload: response.data });
     })
